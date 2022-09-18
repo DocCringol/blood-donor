@@ -15,25 +15,16 @@
   color: white;
 }
 
-#about {
+#home {
   top: 20px;
   background-color: #04AA6D;
 }
 
-#blog {
+#test {
   top: 80px;
   background-color: #2196F3;
 }
 
-#projects {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#contact {
-  top: 200px;
-  background-color: #555
-}
 
 
 /*delete*/
