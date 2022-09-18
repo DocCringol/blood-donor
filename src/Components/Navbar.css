@@ -10,6 +10,11 @@
   border-radius: 0 5px 5px 0;
 }
 
+#mySidenav {
+	position: fixed;
+	top: 0;
+}
+
 #mySidenav a:hover {
   left: 0;
   color: white;
@@ -23,12 +28,4 @@
 #test {
   top: 80px;
   background-color: #2196F3;
-}
-
-
-
-/*delete*/
-.ab
-{
-  text-align: center;
 }
