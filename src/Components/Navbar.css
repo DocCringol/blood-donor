@@ -1,4 +1,5 @@
 #mySidenav a {
+	z-index: 9999;
   position: absolute;
   left: -80px;
   transition: 0.3s;

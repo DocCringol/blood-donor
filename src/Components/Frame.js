@@ -38,8 +38,7 @@ const handleWheel = ({deltaY}) => {
 const Frame = ({ children, style }) => {
 	let defaultStyle = {width: window.innerWidth/100*90,
 						margin: '0 auto',
-						height: '100%',
-						backgroundColor: 'green'};
+						height: '100%',};
 	return (
 		<div className='frame' style={{...defaultStyle, ...style}} onWheel={handleWheel}>
 			<motion.div

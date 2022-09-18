@@ -1,0 +1,18 @@
+.contentBlock {
+	position: relative;
+	z-index: 0;
+}
+
+.contentBlock .bg-image {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	display: block;
+	background-size: cover;
+}
+
+.contentBlock .content {
+	position: absolute;
+	z-index: 1;
+}
