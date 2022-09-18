@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion'
 import { Routes, Route } from "react-router-dom";
 import Home from './Pages/Home';
-import Test from './Pages/Test';
+import Game from './Pages/Game';
 
 
 const AnimatedRouter = () => {
@@ -13,7 +13,7 @@ const AnimatedRouter = () => {
 					<Routes location={location} 
 							key={location.pathname}>
 							<Route path='/' element={<Home/>} />
-							<Route path='/test' element={<Test/>} />
+							<Route path='/game' element={<Game/>} />
 					</Routes>
 			</AnimatePresence>
 	)

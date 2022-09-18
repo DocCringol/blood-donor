@@ -21,16 +21,18 @@ const doSomething = (deltaY) => {
 		window.scrollTo({top:window.pageYOffset-window.pageYOffset%h+h/100*95, left:0, behavior:'smooth'})
 	}
 };
+
 let ticking = false;
 
 const handleWheel = ({deltaY}) => {
-	if (!ticking) {
-	  window.requestAnimationFrame(() => {
-		doSomething(deltaY);
-		ticking = false;
-	  });
-	  ticking = true;
-	}
+	// if (!ticking) {
+	//   window.requestAnimationFrame(() => {
+	// 	doSomething(deltaY);
+	// 	ticking = false;
+	//   });
+	//   ticking = true;
+	// }
+	
 };
 
 const Frame = ({ children, style }) => {

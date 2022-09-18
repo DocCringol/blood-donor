@@ -10,7 +10,7 @@ const Navbar = () => {
 				<AnimatedRouter />
 				<nav id="mySidenav" className="sidenav">
 					<Link to="/" id="home">Home</Link>
-					<Link to="/test" id="test">Test</Link>
+					<Link to="/game" id="game">Game</Link>
 				</nav>
 			</Router>
 		</>
