@@ -1,5 +1,5 @@
 import React from 'react'
-import Transitions from './Transition'
+import Transitions from '../Transition'
 
 const Test = () => {
 	return (
