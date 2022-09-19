@@ -132,7 +132,7 @@ const Greeting = ({ onClick }) => {
 				<Kovalenok num='2'></Kovalenok>
 				<InterDiv>
 					<Comment>
-						Привет, меня ховут Ковалёнок! Помоги мне стать донором
+						Привет, меня зовут Ковалёнок! Помоги мне стать донором
 					</Comment>
 					<ButtonGrid bottom='15%'>
 						<Button variant="danger" className="startBtn" onClick={onClick}>Привет!</Button>
