@@ -13,9 +13,9 @@ import './ContentBlock.css';
 
 
 const ContentBlock = ({ children, style }) => {
-	let defaultStyle = {height: window.innerHeight/100*90,
-						marginTop: window.innerHeight/100*5,
-						marginBottom: window.innerHeight/100*5,};
+	let defaultStyle = {height: window.innerHeight,
+						paddingTop: window.innerHeight/100*5,
+						paddingBottom: window.innerHeight/100*5,};
 	// let upStyle = {}
 	return (
 		<>

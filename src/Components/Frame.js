@@ -40,7 +40,7 @@ const Frame = ({ children, style }) => {
 						margin: '0 auto',
 						height: '100%',};
 	return (
-		<div className='frame' style={{...defaultStyle, ...style}} onWheel={handleWheel}>
+		<div className='frame' style={{...defaultStyle, ...style}}>
 			<motion.div
 				variants={animationConfiguration}
 				initial="initial"
