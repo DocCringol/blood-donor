@@ -6,6 +6,9 @@ import './Game.css'
 import ButtonGrid from '../ButtonGrid';
 import Kovalenok from '../Kovalenok'
 import Comment from '../Comment'
+import InterDiv from '../InterDiv'
+import Image from 'react-bootstrap/Image'
+import Alert from 'react-bootstrap/Alert';
 
 
 const question0 = [
@@ -39,26 +42,52 @@ var question = question0;
 var answers = answers0;
 var final = final0;
 
+const Finish = () => {
+	document.getElementById("finish").style.visibility = "visible ";
+	document.getElementById("next").style.visibility = "hidden";
+}
+
 const Answer = ({ onClick, n }) => {
 	question = question.slice(1);
 	answers = answers.slice(1);
 	var res = final[0][n];
 	final = final.slice(1);
+	if (question.length == 0) {
+		return (
+			<>
+				<ContentBlock>
+					<div id='finish' style={{visibility:"hidden"}}>
+						<Kovalenok num='4'></Kovalenok>
+						<InterDiv>
+							<Comment>Спасибо, что помог мне стать донором! Пусть в мире пульсирует жизнь</Comment>
+							<ButtonGrid bottom='15%'>
+								<Button variant="danger" className="startBtn" onClick={onClick}>Начать Занаво</Button>
+							</ButtonGrid>
+						</InterDiv>
+					</div>
+					<div id='next' style={{visibility:"visible"}}>
+						<Comment>{res}</Comment>
+						<ButtonGrid bottom='15%'>
+							<Button variant="danger" className="startBtn" onClick={Finish}>Далее</Button>
+						</ButtonGrid>
+						<Kovalenok num='1' style={{ filter: 'blur(5px)' }}></Kovalenok>
+					</div>
+				</ContentBlock>
+			</>
+		);
+	}
 	return (
 		<>
 			<ContentBlock>
-				<Comment>
-					{res}
-				</Comment>
-				<Kovalenok num={n === 0 ? "1" : "6"} style={{ filter: 'blur(5px)' }}></Kovalenok>
+				<Comment>{res}</Comment>
 				<ButtonGrid bottom='15%'>
-					<Button variant="primary" className="startBtn" onClick={onClick}>
-						{question.length === 0 ? "Заново" : "Далее"}</Button>
+					<Button variant="danger" className="startBtn" onClick={onClick}>Далее</Button>
 				</ButtonGrid>
+				<Kovalenok num='1' style={{ filter: 'blur(5px)' }}></Kovalenok>
 			</ContentBlock>
 		</>
-	)
-}
+	);
+};
 
 
 class Question extends React.Component {
@@ -74,15 +103,18 @@ class Question extends React.Component {
 		} else if (this.state.chosen == -1) {
 			return (
 				<>
+
 					<ContentBlock>
-						<Comment>
-							{question[0]}
-						</Comment>
-						<Kovalenok num='4'></Kovalenok>
-						<ButtonGrid bottom='15%' amount='2'>
-							<Button onClick={() => this.setState({ chosen: 0 })}>{answers[0][0]}</Button>
-							<Button onClick={() => this.setState({ chosen: 1 })}>{answers[0][1]}</Button>
-						</ButtonGrid>
+						<Kovalenok num='2'></Kovalenok>
+						<InterDiv>
+							<Comment>
+								{question[0]}
+							</Comment>
+							<ButtonGrid bottom='15%' amount='2'>
+								<Button variant="danger" onClick={() => this.setState({ chosen: 0 })}>{answers[0][0]}</Button>
+								<Button variant="danger" onClick={() => this.setState({ chosen: 1 })}>{answers[0][1]}</Button>
+							</ButtonGrid>
+						</InterDiv>
 					</ContentBlock>
 				</>
 			);
@@ -97,13 +129,15 @@ const Greeting = ({ onClick }) => {
 	return (
 		<>
 			<ContentBlock>
-				<Comment>
-					Привет, Меня зовут Коваленок! И я хочу сдать кровь, но не знаю, правил.
-				</Comment>
-				<Kovalenok num='1'></Kovalenok>
-				<ButtonGrid bottom='15%'>
-					<Button variant="primary" className="startBtn" onClick={onClick}>Привет!</Button>
-				</ButtonGrid>
+				<Kovalenok num='2'></Kovalenok>
+				<InterDiv>
+					<Comment>
+						Привет, меня ховут Ковалёнок! Помоги мне стать донором
+					</Comment>
+					<ButtonGrid bottom='15%'>
+						<Button variant="danger" className="startBtn" onClick={onClick}>Привет!</Button>
+					</ButtonGrid>
+				</InterDiv>
 			</ContentBlock>
 		</>
 	)
@@ -117,10 +151,15 @@ const Start = ({ onClick }) => {
 	return (
 		<>
 			<ContentBlock>
-				<Kovalenok num='2'></Kovalenok>
-				<ButtonGrid bottom='15%'>
-					<Button variant="primary" className="startBtn" onClick={onClick}>Начать Игру</Button>
-				</ButtonGrid>
+				<Kovalenok num='1'></Kovalenok>
+				<InterDiv>
+					<Comment>
+						Интерактивная Игра "Ковалёнок"
+					</Comment>
+					<ButtonGrid bottom='15%'>
+						<Button variant="danger" className="startBtn" onClick={onClick}>Познакомиться с Ковалёнком</Button>
+					</ButtonGrid>
+				</InterDiv>
 			</ContentBlock>
 		</>
 	)
@@ -152,6 +191,12 @@ const Game = () => {
 	return (
 		<>
 			<Frame>
+				<Alert variant="danger" className="logo" style={{
+					left: window.innerWidth / 100 * 84,
+					top: window.innerHeight / 100 * 7,
+				}}>
+					<Image src="/Images/logo2.png"></Image>
+				</Alert>
 				<div className="game">
 					<Menu></Menu>
 				</div>

@@ -5,6 +5,18 @@
 }
 
 .game .bg-image {
-	background-image: url(../../Images/Game/bg.jpg);
+	background-image: url(/Images/Game/bg.png);
 	filter: blur(5px);
+	background-position: left;
+}
+
+
+.logo {
+	position: fixed;
+	z-index: 9997;
+	padding: 0;
+}
+
+.logo img {
+	width: 10vw;
 }

@@ -1,10 +1,10 @@
 #mySidenav a {
 	z-index: 9999;
   position: absolute;
-  left: -80px;
+  left: -250px;
   transition: 0.3s;
   padding: 15px;
-  width: 100px;
+  width: 300px;
   text-decoration: none;
   font-size: 20px;
   color: transparent;
@@ -23,10 +23,10 @@
 
 #home {
   top: 20px;
-  background-color: #04AA6D;
+  background-color: #DC3545
 }
 
 #game {
-  top: 80px;
-  background-color: #2196F3;
+  top: 90px;
+  background-color: #DC3545
 }
