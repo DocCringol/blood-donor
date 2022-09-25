@@ -23,19 +23,20 @@ const Animated = () => {
 class App extends Component {
 	render() {
 		return (
-			<div className="container">
-				<>
-					<Router>
-						<Animated />
-					</Router>
-				</>
-				<div id="mySidenav" class="sidenav">
-					<a href="/" id="about">Home</a>
-					<a href="/test" id="blog">Test</a>
-					<a href="#" id="projects">Projects</a>
-					<a href="#" id="contact">Contact</a>
-				</div>
-			</div>
+			// <div className="container">
+			// 	<>
+			// 		<Router>
+			// 			<Animated />
+			// 		</Router>
+			// 	</>
+			// 	<div id="mySidenav" class="sidenav">
+			// 		<a href="/" id="about">Home</a>
+			// 		<a href="/test" id="blog">Test</a>
+			// 		<a href="#" id="projects">Projects</a>
+			// 		<a href="#" id="contact">Contact</a>
+			// 	</div>
+			// </div>
+			<h1>На сайте ведутся технические работы</h1>
 		)
 	}
 }
