@@ -1,0 +1,34 @@
+.navbarMobile {
+	z-index: 9000;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+  left: -50%;
+	width: 50%;
+	top: 0;
+  transition: 0.3s;
+}
+
+.navbarMobile a {
+  transition: 0.3s;
+  padding: 5%;
+  width: 100%;
+  text-decoration: none;
+  font-size: 100%;
+  color: transparent;
+}
+
+.menuVisible {
+	left: 0;
+}
+
+.menuVisible a{
+  color: white;
+}
+
+.navbarMobile .toggleMenu {
+	position: absolute;
+	width: 10%;
+	right: -15%;
+	top: 5%;
+}

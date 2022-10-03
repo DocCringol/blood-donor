@@ -1,0 +1,32 @@
+.navbar a {
+	z-index: 9999;
+  position: absolute;
+  left: -250px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 300px;
+  text-decoration: none;
+  font-size: 20px;
+  color: transparent;
+  border-radius: 0 5px 5px 0;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+}
+
+.navbar a:hover {
+  left: 0;
+  color: white;
+}
+
+#home {
+  top: 20px;
+  background-color: #DC3545
+}
+
+#game {
+  top: 90px;
+  background-color: #DC3545
+}
