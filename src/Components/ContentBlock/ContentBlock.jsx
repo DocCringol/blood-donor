@@ -13,19 +13,18 @@ import useScroll from '../Scroll/Scroll';
 // }
 
 
-const ContentBlock = ({ children, style }) => {
+const ContentBlock = ({ children, style, contentStyle }) => {
 	const { height, width } = useWindowDimensions();
 
 	let defaultStyle = {padding: '5%',
-						minHeight: '100%',
+						// minHeight: height+'px',
 						width: '100%',
 					};
 
 	return (
 		<>
 			<div className='contentBlock' style={{...defaultStyle, ...style}}>
-				<div className='content'>
-					<div>height = {height}, width = {width}</div>
+				<div className='content' style={contentStyle}>
 					{children}
 				</div>
 			</div>

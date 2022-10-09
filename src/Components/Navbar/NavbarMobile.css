@@ -3,19 +3,23 @@
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-  left: -50%;
-	width: 50%;
+  left: -50vmin;
+	width: 50vmin;
 	top: 0;
-  transition: 0.3s;
+  transition-duration: 0.3s;
+  font-size: clamp(0.5rem, 6vmin, 3rem);
+  background-color: #DC3545;
+  height: 100vh;
 }
 
 .navbarMobile a {
   transition: 0.3s;
-  padding: 5%;
+  padding: 3vmin 2vmax;
   width: 100%;
   text-decoration: none;
   font-size: 100%;
   color: transparent;
+  background-color: #DC3545
 }
 
 .menuVisible {
@@ -26,9 +30,38 @@
   color: white;
 }
 
-.navbarMobile .toggleMenu {
+.bg-blur {
+	z-index: 8999;
+	position: fixed;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	transition-duration: 0.3s;
+	background:rgba(0,0,0,0.8);
+  filter: blur(0px);
+}
+
+.bg-blur.Visible {
+	display: block;
+}
+
+.bg-blur.Invisible {
+	display: none;
+}
+
+.toggleMenu {
 	position: absolute;
-	width: 10%;
-	right: -15%;
-	top: 5%;
+	width: 30%;
+	right: -40%;
+	top: 2.5%;
+	transition-duration: 0.3s;
+}
+
+.toggleMenu.Visible {
+	content: url('./multiply.png');
+}
+
+.toggleMenu.Invisible {
+	content: url('./menu.png');
 }

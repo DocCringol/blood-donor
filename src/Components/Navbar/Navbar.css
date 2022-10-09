@@ -1,3 +1,5 @@
+ /* TODO: Responsive navbar */
+
 .navbar a {
 	z-index: 9999;
   position: absolute;
@@ -9,9 +11,11 @@
   font-size: 20px;
   color: transparent;
   border-radius: 0 5px 5px 0;
+  background-color: #DC3545
 }
 
 .navbar {
+	z-index: 8999;
 	position: fixed;
 	top: 0;
 }
@@ -21,12 +25,16 @@
   color: white;
 }
 
+/* TODO: Universal positioning for navbar links */
+
 #home {
   top: 20px;
-  background-color: #DC3545
 }
 
 #game {
   top: 90px;
-  background-color: #DC3545
+}
+
+#test {
+  top: 160px;
 }

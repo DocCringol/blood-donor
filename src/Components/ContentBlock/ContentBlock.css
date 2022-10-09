@@ -1,7 +1,8 @@
 .contentBlock {
+	min-height: 100vh;
 	position: relative;
 	z-index: 0;
-	background-color: red;
+	background-color: #fff8e1;
 }
 
 /* .contentBlock .bg-image {
@@ -19,5 +20,4 @@
 	display: block;
 	position: relative;
 	z-index: 1;
-	background-color: green;
 }	
