@@ -47,8 +47,10 @@ class Navbar extends React.Component {
 						{this.state.isMobile ? 
 							// this.state.menuVisible ? <img src='multiply.png' onClick={this.toggleMenu} className="toggleMenu"></img> 
 							// : <img src='menu.png' onClick={this.toggleMenu} className="toggleMenu"></img>
-							<img className={"toggleMenu " + (this.state.menuVisible ? "Visible" : "Invisible")}
-							onClick={this.toggleMenu}></img>
+							<div>
+								<img className={"toggleMenu " + (this.state.menuVisible ? "Visible" : "Invisible")}
+								onClick={this.toggleMenu}></img>
+							</div>
 						: null}
 						{this.state.isMobile ? this.onClick = this.toggleMenu : this.onClick = null}
 						<Link to="/" id="home" onClick={this.onClick}>Главная</Link>

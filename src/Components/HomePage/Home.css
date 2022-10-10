@@ -1,7 +1,16 @@
+.page-grid.portrait {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: "grid-1" "grid-2" "form";
+	height: 300vh;
+	grid-gap: 4vh;
+}
+
 .grid-1 {
+	grid-area: grid-1;
 	max-height: 100vh;
 	display: grid;
-  grid-template-areas:
+  	grid-template-areas:
 	"grid-1-1"
 	"grid-1-2";
 	margin-bottom: 5%;
@@ -10,12 +19,12 @@
 .grid-1.landscape {
 	grid-gap: 5vh;
 	height: 80vh;
-  grid-template-rows: 3fr 2fr;
+  	grid-template-rows: 3fr 2fr;
 }
 
 .grid-1.portrait {
-	height: 95vh;
-  grid-template-rows: 1fr 1fr;
+	height: 90vh;
+  	grid-template-rows: 4fr 3fr;
 }
 
 .grid-1-1 {
@@ -30,23 +39,29 @@
 }
 
 .portrait > .grid-1-1 {
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 3fr 2fr;
 	grid-template-areas:
 	"logo"
 	"name";
 }
 
-.grid-1-1 > .logo {
-	grid-area: logo;
+.grid-1-1 .logo {
+	background-image: url(./logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 135%;
 }
 
-.grid-1-1 > .logo> img {
+/* .grid-1-1 > .logo> img {
 	display: block;
 	position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .grid-1-1 > .name {
 	grid-area: name;
@@ -105,7 +120,7 @@
 }
 
 .portrait .grid-1-2 .counter {
-	font-size: clamp(2rem, 26vmin, 9rem);
+	font-size: clamp(2rem, 18vmin, 7rem);
 	line-height: clamp(2rem, 26vmin, 9rem);
 }
 
@@ -122,26 +137,44 @@
 
 
 
+.grid-2 {
+	grid-area: grid-2;
+	display: grid;
+  grid-template-areas:
+	"grid-2-1"
+	"grid-2-2";
+}
 
+.grid-2 img {
+	max-width: 90vw;
+}
+
+.grid-2-header {
+	text-align: center;
+	font-size: clamp(1rem, 9vmin, 3rem);
+	line-height: clamp(1rem, 9vmin, 3rem);
+	margin: 5vh;
+}
 
 
 
 .form {
+	grid-area: form;
 	position: relative;
 	text-align: center;
 }
 
 /* TODO: Make form grid */
 .form.landscape {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding-top: 5vh;
 	width: 80%;
 	margin: auto;
 }
 
-.form.portrait {
-	min-height: 100vh;
-}
+/* .form.portrait {
+	min-height: 80vh;
+} */
 
 .form .form-header {
 	font-size: clamp(1rem, 7vmin, 3rem);
@@ -154,6 +187,7 @@
 	top: 50%;
 	transform: translate(0, -50%);
 }
+
 /* .form > form {
 	height: 80vh;
 } */

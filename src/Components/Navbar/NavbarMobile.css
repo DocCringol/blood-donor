@@ -56,6 +56,8 @@
 	right: -40%;
 	top: 2.5%;
 	transition-duration: 0.3s;
+	background-color: #F4BDB2;
+	border-radius: 25%;
 }
 
 .toggleMenu.Visible {
