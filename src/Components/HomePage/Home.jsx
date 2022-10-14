@@ -52,6 +52,29 @@ const Home = () => {
 							<Image className='img-2' src='/Images/2.jpeg' alt='2' />
 							<Image className='img-3' src='/Images/3.png' alt='3' />
 						</div>
+						<div className={'flexbox-5 ' + orientation} id={'centres'}>
+							<div className='flexbox-5-header'>Донорские центры</div>
+							<div className='msk'>
+								<div className='header'>Москва</div>
+								<div className='text'>
+									1. ул. Поликарпова, 14 к2 · 8 (495) 945-33-19 <br />
+									2. ул. Металлургов, 37А · 8 (495) 304-02-06 <br />
+									3. ул. Щукинская, 6, к.2 · 8 (495) 122-20-13 <br />
+									4. Каширское ш., 23с2 · 8 (499) 324-62-37 <br />
+									5. Бакинская ул., 31 · 8 (495) 326-38-40 <br />
+								</div>
+							</div>
+							<div className='spb'>
+								<div className='header'>Санкт-Петербург</div>
+								<div className='text'>
+									1. Московский пр-т., 104 · 8 (812) 635-68-85 <br />
+									2. ул. Аккуратова, 2 · 8 (812) 702-37-46 <br />
+									3. Загородный просп., 47 · 8 (812) 495-72-51 <br />
+									4. пр. Луначарского, 47 · 8 (812) 558-65-30 <br />
+									5. Жуковско-Волынская ул., 2/4 · 8 (812) 466-43-82 <br />
+								</div>
+							</div>
+						</div>
 						<div className={'flexbox-4 ' + orientation} id={'recomendations'}>
 							<div className='flexbox-4-header'>База рекомендаций кардиологов</div>
 							<div className='grid-videos'>
@@ -60,6 +83,7 @@ const Home = () => {
 								<div className='video-3'><iframe src="https://www.youtube.com/embed/_UphrrmOFGo"></iframe></div>
 								<div className='video-4'><iframe src="https://www.youtube.com/embed/JV5NhwBBwIk"></iframe></div>
 							</div>
+							{/* TODO More videos */}
 							<Button variant="danger">Больше видео</Button>
 						</div>
 						<div className={'flexbox-3 ' + orientation} id={'contact_us'}>

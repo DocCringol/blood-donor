@@ -3,6 +3,7 @@ import Transitions from '../Transition'
 import ContentBlock	from '../ContentBlock/ContentBlock.jsx';
 import useWindowDimensions from '../Dimensions/Dimensions';
 
+// TODO leave easteregg
 const Test = () => {
 	const { height, width } = useWindowDimensions();
 	return (

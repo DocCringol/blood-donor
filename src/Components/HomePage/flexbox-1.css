@@ -11,6 +11,10 @@
 	height: 95vh;
 }
 
+.flexbox-1.portrait {
+	height: 90vh;
+}
+
 
 /* flexbox-1-1 */
 .flexbox-1-1 {
@@ -24,6 +28,7 @@
 }
 
 .flexbox-1-1.portrait {
+	height: 60vh;
 	flex-direction: column;
 }
 
@@ -56,6 +61,10 @@
 	align-content: center;
 	height: 35vh;
 	width: 90vw;
+}
+
+.flexbox-1.portrait .counter-div {
+	height: 30vh;
 }
 
 .flexbox-1 .name {

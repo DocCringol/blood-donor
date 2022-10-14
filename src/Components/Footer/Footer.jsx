@@ -1,11 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import './Footer.css';
 
 
 const Footer = () => {
 	return (
 		<>
+		{/* TODO Better links */}
 			<div className="footer">
 				<div className="presentation"><a href="./presentation.pdf" download={'presentation.pdf'}>Презентация проекта</a></div>
 				<div className="rezume">
@@ -24,8 +24,8 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="developer">
-					<div className="developer-head">Разработчик сайта (телеграм)</div>
-					<a className="developer-tg" href={'https://t.me/elyd_t'}>@elyd_t</a>
+					<div className="developer-head">Разработчик сайта</div>
+					<a className="developer-tg" href={'https://t.me/elyd_t'}>Телеграм: @elyd_t</a>
 				</div>
 			</div>
 		</>

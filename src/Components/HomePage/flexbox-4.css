@@ -18,7 +18,7 @@
 
 .flexbox-4 .grid-videos {
 	height: 70vh;
-	width: 70vw;
+	width: 90vw;
 	/* display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -29,7 +29,7 @@
 	align-content: space-around;
 	text-align: center;
 
-	/* gap: 3vw; */
+	gap: 1vw;
 
 	margin: 0 auto;
 }
@@ -40,6 +40,8 @@
 }
 
 .flexbox-4 button {
-	font-size: min(2.5vmin, 1.75vmax);
-	line-height: min(2.5vmin, 1.75vmax);
+	margin: 5vh;
+	margin-top: 3vh;
+	/* width: 20vw; */
+	height: 6vh;
 }

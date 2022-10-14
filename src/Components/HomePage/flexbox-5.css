@@ -1,0 +1,30 @@
+.flexbox-5 {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	width: 90vw;
+	height: 95vh;
+	margin: 5vh auto;
+}
+
+.flexbox-5-header {
+	font-size: min(8vmin, 4vmax);
+	line-height: min(8vmin, 4vmax);
+	margin: 2vh;
+}
+
+.flexbox-5 .header {
+	font-size: min(6vmin, 3vmax);
+	line-height: min(6vmin, 3vmax);
+	margin: 2vh;
+	color: #DC3545;
+}
+
+.flexbox-5 .text {
+	font-size: min(4vmin, 3vmax);
+	line-height: min(6vmin, 4vmax);
+	/* margin: 2vh; */
+}

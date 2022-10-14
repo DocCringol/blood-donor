@@ -36,7 +36,7 @@
 	transform: translate(0, -50%);
 }
 
-/* TODO: Universal positioning for navbar links */
+/* TODO Universal positioning for navbar links */
 
 #home {
 	top: 3.2vh;
@@ -46,14 +46,18 @@
 	top: 17.6vh;
 }
 
-#recomendations {
+#centres {
 	top: 32vh;
 }
 
-#contact_us {
+#recomendations {
 	top: 46.4vh;
 }
 
-#test {
+#contact_us {
 	top: 60.8vh;
+}
+
+#test {
+	top: 75.2vh;
 }
