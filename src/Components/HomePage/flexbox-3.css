@@ -6,10 +6,6 @@
 	text-align: center;
 
 	margin-top: 5vh;
-
-	
-	font-size: min(4vmin, 3vmax);
-	line-height: min(4vmin, 3vmax);
 }
 
 .flexbox-3.portrait {
@@ -21,11 +17,33 @@
 }
 
 .flexbox-3 .header {
-	font-size: min(8vmin, 4vmax);
-	line-height: min(8vmin, 4vmax);
 	margin: 5vh;
+	font-size: min(9vmin, 4.5vmax);
+	line-height: min(9vmin, 4.5vmax);
+}
+
+.flexbox-3 label {
+	margin: 2vh;
+	font-size: min(4vmin, 3vmax);
+	line-height: min(4vmin, 3vmax);
 }
 
 .flexbox-3 button {
 	margin: 5vh;
+	margin-top: 3vh;
+	height: 6vh;
+	font-size: min(3vmin, 2.5vmax);
+	line-height: min(3vmin, 2.5vmax);
+}
+
+.flexbox-3 textarea {
+	height: 15vh;
+	font-size: min(3vmin, 2.5vmax);
+	line-height: min(3vmin, 2.5vmax);
+}
+
+.flexbox-3 input {
+	height: 6vh;
+	font-size: min(3vmin, 2.5vmax);
+	line-height: min(3vmin, 2.5vmax);
 }

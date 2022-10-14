@@ -67,7 +67,7 @@ const Home = () => {
 									</Form.Group>
 									<Form.Group controlId="validationCustom03">
 										<Form.Label>Опишите вопрос или предложение, с которым вы хотите к нам обратиться</Form.Label>
-										<Form.Control required as="textarea" rows='5' type="text" placeholder="Введите сообщение" />
+										<Form.Control required as="textarea" type="text" placeholder="Введите сообщение" />
 									</Form.Group>
 									<Button variant='danger' type="submit">Отправить</Button>
 								</Form>
