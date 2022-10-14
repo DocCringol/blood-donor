@@ -1,40 +1,57 @@
  /* TODO: Responsive navbar */
 
-.navbar a {
-	z-index: 9999;
-  position: absolute;
-  left: -250px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 300px;
-  text-decoration: none;
-  font-size: 20px;
-  color: transparent;
-  border-radius: 0 5px 5px 0;
-  background-color: #DC3545
-}
+ .navbar {
+	transition: 0.3s;
+	top: 5vh;
 
-.navbar {
+	height: 90vh;
 	z-index: 8999;
 	position: fixed;
-	top: 0;
+}
+
+.navbar a {
+	position: absolute;
+	z-index: 9999;
+	padding: 2vh;
+	width: 30vw;
+	height: 13vh;
+	left: -25vw;
+
+	text-decoration: none;
+	color: transparent;
+	
+	transition: 0.3s;
+	border-radius: 0 6.5vh 6.5vh 0 / 0 6.5vh 6.5vh 0;
+	background-color: #DC3545;
 }
 
 .navbar a:hover {
-  left: 0;
-  color: white;
+	left: 0;
+	color: white;
+}
+
+.navbar a p {
+	transition: 0.3s;
+  font-size: min(7vmax, 4vmin);
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 /* TODO: Universal positioning for navbar links */
 
 #home {
-  top: 20px;
+	top: 3.2vh;
 }
 
-#game {
-  top: 90px;
+#mem {
+	top: 17.6vh;
+}
+
+#contact_us {
+	top: 32vh;
 }
 
 #test {
-  top: 160px;
+	top: 46.4vh;
 }

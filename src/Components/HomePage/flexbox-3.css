@@ -5,7 +5,7 @@
 	align-content: space-around;
 	text-align: center;
 
-	margin-top: 5vh;
+	margin: 5vh auto;
 }
 
 .flexbox-3.portrait {

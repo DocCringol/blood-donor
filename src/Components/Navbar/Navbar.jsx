@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion'
 import Home from '../HomePage/Home';
@@ -53,9 +54,10 @@ class Navbar extends React.Component {
 							</div>
 						: null}
 						{this.state.isMobile ? this.onClick = this.toggleMenu : this.onClick = null}
-						<Link to="/" id="home" onClick={this.onClick}>Главная</Link>
-						<Link to="/game" id="game" onClick={this.onClick}>Игра</Link>
-						<Link to="/test" id="test" onClick={this.onClick}>Тест</Link>
+						<Link to="/#counter" id="home" onClick={this.onClick}><p>Главная</p></Link>
+						<Link to="/#mem" id="mem" onClick={this.onClick}><p>Памятки донора</p></Link>
+						<Link to="/#contact_us" id="contact_us" onClick={this.onClick}><p>Напишите нам</p></Link>
+						<Link to="/test" id="test" onClick={this.onClick}><p>Тест</p></Link>
 					</nav>
 					<Footer></Footer>
 				</Router>

@@ -26,8 +26,8 @@ const Home = () => {
 		<>
 			<Transitions>
 				<ContentBlock>
-					<div className={'page-flexs ' + orientation}>
-						<div className={'flexbox-1 ' + orientation}>
+					<div>
+						<div className={'flexbox-1 ' + orientation} id={'counter'}>
 							<div className={'flexbox-1-1 ' + orientation}>
 								<div className='logo-div'>
 									<Image src='logo_cut512.png' className={'logo ' + orientation} />
@@ -46,13 +46,13 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className={'flexbox-2 ' + orientation}>
+						<div className={'flexbox-2 ' + orientation} id={'mem'}>
 							<div className='flexbox-2-header'>Памятки донора</div>
 							<Image className='img-1' src='/Images/1.jpg' alt='1' />
 							<Image className='img-2' src='/Images/2.jpeg' alt='2' />
 							<Image className='img-3' src='/Images/3.png' alt='3' />
 						</div>
-						<div className={'flexbox-3 ' + orientation}>
+						<div className={'flexbox-3 ' + orientation} id={'contact_us'}>
 								<div className='header'>
 									Есть вопросы или предложения? Хотите поучаствовать в программе? Напишите нам!
 								</div>

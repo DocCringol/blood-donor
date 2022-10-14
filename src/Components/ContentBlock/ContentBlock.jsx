@@ -16,10 +16,7 @@ import useScroll from '../Scroll/Scroll';
 const ContentBlock = ({ children, style, contentStyle }) => {
 	const { height, width } = useWindowDimensions();
 
-	let defaultStyle = {padding: '5%',
-						// minHeight: height+'px',
-						width: '100%',
-					};
+	let defaultStyle = {};
 
 	return (
 		<>

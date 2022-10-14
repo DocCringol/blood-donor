@@ -1,7 +1,3 @@
 @import url(./flexbox-1.css);
 @import url(./flexbox-2.css);
 @import url(./flexbox-3.css);
-
-.page-flex {
-	display: flex;
-}
