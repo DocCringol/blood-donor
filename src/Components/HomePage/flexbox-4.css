@@ -40,8 +40,11 @@
 }
 
 .flexbox-4 button {
+	padding: 0;
 	margin: 5vh;
 	margin-top: 3vh;
 	/* width: 20vw; */
 	height: 6vh;
+	font-size: min(4vmin, 1.75vmax);
+	line-height: min(4vmin, 1.75vmax);
 }

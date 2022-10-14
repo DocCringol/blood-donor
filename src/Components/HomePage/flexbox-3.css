@@ -29,12 +29,13 @@
 }
 
 .flexbox-3 button {
-	margin: 5vh;
+	padding: 0;
+	margin: 5vmin;
 	margin-top: 3vh;
-	width: 20vw;
+	width: 30vw;
 	height: 6vh;
-	font-size: min(2.5vmin, 1.75vmax);
-	line-height: min(2.5vmin, 1.75vmax);
+	font-size: min(4vmin, 1.75vmax);
+	line-height: min(4vmin, 1.75vmax);
 }
 
 .flexbox-3 textarea {
