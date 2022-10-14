@@ -1,0 +1,201 @@
+.page-grid.portrait {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: "grid-1" "grid-2" "form";
+	height: 300vh;
+	grid-gap: 4vh;
+}
+
+.grid-1 {
+	grid-area: grid-1;
+	max-height: 100vh;
+	display: grid;
+  	grid-template-areas:
+	"grid-1-1"
+	"grid-1-2";
+	margin-bottom: 5%;
+}
+
+.grid-1.landscape {
+	grid-gap: 5vh;
+	height: 80vh;
+  	grid-template-rows: 3fr 2fr;
+}
+
+.grid-1.portrait {
+	height: 90vh;
+  	grid-template-rows: 4fr 3fr;
+}
+
+.grid-1-1 {
+	grid-area: grid-1-1;
+	display: grid;
+}
+
+.landscape > .grid-1-1 {
+	grid-template-areas:
+	"logo name";
+  grid-template-columns: 1fr 1fr;
+}
+
+.portrait > .grid-1-1 {
+  grid-template-rows: 3fr 2fr;
+	grid-template-areas:
+	"logo"
+	"name";
+}
+
+.grid-1-1 .logo {
+	background-image: url(./logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	height: 135%;
+}
+
+/* .grid-1-1 > .logo> img {
+	display: block;
+	position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.grid-1-1 > .name {
+	grid-area: name;
+}
+
+.grid-1-1 > .name > .name-text {
+	position: relative;
+	text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .landscape > .grid-1-1 > .name > .name-text {
+  font-size: clamp(1.5rem, 7vmin, 7.5rem);
+}
+
+.portrait > .grid-1-1 > .name > .name-text {
+  font-size: clamp(1.5rem, 14vmin, 5.5rem);
+} */
+
+.grid-1-1 > .name > .name-text {
+  font-size: clamp(1.5rem, 14vmin, 5.5rem);
+}
+
+.grid-1-2 {
+	grid-area: grid-1-2;
+}
+
+.grid-1-2 .counter-div {
+	position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.grid-1-2 .counter-text {
+	font-size: clamp(1.5rem, 6vmin, 3rem);
+	line-height: clamp(1.5rem, 6vmin, 3rem);
+}
+
+.grid-1-2 .counter {
+	font-size: clamp(2rem, 16vmin, 7rem);
+	line-height: clamp(2rem, 18vmin, 7rem);
+}
+
+.grid-1-2 .counter-2 {
+	font-size: clamp(1.5rem, 6vmin, 3rem);
+	line-height: clamp(1.5rem, 6vmin, 3rem);
+}
+
+.portrait .grid-1-2 .counter-text {
+	font-size: clamp(1rem, 9vmin, 3rem);
+	line-height: clamp(1rem, 9vmin, 3rem);
+}
+
+.portrait .grid-1-2 .counter {
+	font-size: clamp(2rem, 18vmin, 7rem);
+	line-height: clamp(2rem, 26vmin, 9rem);
+}
+
+.portrait .grid-1-2 .counter-2 {
+	font-size: clamp(2rem, 12vmin, 5rem);
+	line-height: clamp(2rem, 12vmin, 5rem);
+}
+
+.grid-1-2 .counter {
+	color: #DC3545
+}
+
+
+
+
+
+.grid-2 {
+	grid-area: grid-2;
+	display: grid;
+  grid-template-areas:
+	"grid-2-1"
+	"grid-2-2";
+}
+
+.grid-2 img {
+	max-width: 90vw;
+}
+
+.grid-2-header {
+	text-align: center;
+	font-size: clamp(1rem, 9vmin, 3rem);
+	line-height: clamp(1rem, 9vmin, 3rem);
+	margin: 5vh;
+}
+
+
+
+.form {
+	grid-area: form;
+	position: relative;
+	text-align: center;
+}
+
+/* TODO: Make form grid */
+.form.landscape {
+	/* min-height: 100vh; */
+	padding-top: 5vh;
+	width: 80%;
+	margin: auto;
+}
+
+/* .form.portrait {
+	min-height: 80vh;
+} */
+
+.form .form-header {
+	font-size: clamp(1rem, 7vmin, 3rem);
+	line-height: clamp(1rem, 7vmin, 3rem);
+	margin: 2% 0;
+}
+
+.form-content {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+/* .form > form {
+	height: 80vh;
+} */
+
+.form label {
+	margin-top:3vh
+}
+
+.form button {
+	margin: 3vh
+}

@@ -1,0 +1,86 @@
+/* .flexbox-1 */
+.flexbox-1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.flexbox-1.portrait {
+	height: 95vh;
+}
+
+.flexbox-1.landscape {
+	height: 90vh;
+}
+
+
+/* flexbox-1-1 */
+.flexbox-1-1 {
+	flex: 1;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-around;
+	align-content: center;
+	max-height: 30vh;
+}
+
+.flexbox-1-1.portrait {
+	flex-direction: column;
+}
+
+.flexbox-1-1.landscape {
+	flex-direction: row;
+}
+
+
+/* flexbox-1-1 logo */
+.flexbox-1-1 .logo.portrait {
+	max-width: 80vw;
+}
+
+.flexbox-1-1 .logo.landscape {
+	max-width: 50vw;
+	max-height: 40vh;
+}
+
+
+/* counter */
+.counter-div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.flexbox-1 .name {
+	font-size: min(14vmin, 6vmax);
+	/* font-size: clamp(1.5rem, 14vmin, 5.5rem); */
+	line-height: min(14vmin, 6vmax);
+	margin: 2vh 0;
+}
+
+.flexbox-1 .name-text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flexbox-1 .counter-text {
+	font-size: min(6vmin, 3vmax);
+	line-height: min(6vmin, 3vmax);
+}
+
+.flexbox-1 .counter {
+	font-size: min(16vmin, 7vmax);
+	line-height: min(18vmin, 8vmax);
+	color: #DC3545FF;
+}
+
+.flexbox-1 .counter-2 {
+	font-size: min(6vmin, 3vmax);
+	line-height: min(6vmin, 3vmax);
+}

@@ -1,0 +1,22 @@
+.flexbox-2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+
+	max-width: 90vw;
+
+	text-align: center;
+
+	padding: 5vh 0;
+}
+
+.flexbox-2-header {
+	font-size: min(14vmin, 6vmax);
+	line-height: min(14vmin, 6vmax);
+	margin: 5vh;
+}
+
+.flexbox-2 img {
+	max-width: 90vw;
+}

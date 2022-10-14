@@ -26,34 +26,39 @@ const Home = () => {
 		<>
 			<Transitions>
 				<ContentBlock>
-					<div className={'page-flexs ' + orientation}>
+					<div className={'page-grid ' + orientation}>
 						<div className={'flexbox-1 ' + orientation}>
-							<div className={'flexbox-1-1 ' + orientation}>
+							<div className='grid-1-1'>
 								<div className='logo-div'>
-									<Image src='logo_cut512.png' className={'logo ' + orientation} />
+									<div className='logo'></div>
 								</div>
-								<div className='name'><div className='name-text'>От сердца <br /> к сердцу</div></div>
+								<div className='name'>
+									<div className='name-text'>От сердца <br /> к сердцу</div>
+								</div>
 							</div>
-							<div className='counter-div'>
-								<div className='counter-text'>
-									Сколько крови мы смогли собрать с начала работы?
-								</div>
-								<div className='counter'>
-									406 350
-								</div>
-								<div className='counter-2'>
-									мл
+							<div className='grid-1-2'>
+								<div className='counter-div'>
+									<div className='counter-text'>
+										Сколько крови мы смогли собрать с начала работы?
+									</div>
+									<div className='counter'>
+										406 350
+									</div>
+									<div className='counter-2'>
+										мл
+									</div>
 								</div>
 							</div>
 						</div>
 						<div className={'flexbox-2 ' + orientation}>
-							<div className='flexbox-2-header'>Памятки донора</div>
+							<div className='grid-2-header'>Памятки донора</div>
 							<Image className='img-1' src='/Images/1.jpg' alt='1' />
 							<Image className='img-2' src='/Images/2.jpeg' alt='2' />
 							<Image className='img-3' src='/Images/3.png' alt='3' />
 						</div>
-						<div className={'flexbox-3 ' + orientation}>
-								<div className='header'>
+						<div className={'form ' + orientation}>
+							<div className='form-content'>
+								<div className='form-header'>
 									Есть вопросы или предложения? Хотите поучаствовать в программе? Напишите нам!
 								</div>
 								<Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -71,6 +76,7 @@ const Home = () => {
 									</Form.Group>
 									<Button variant='danger' type="submit">Отправить</Button>
 								</Form>
+							</div>
 						</div>
 					</div>
 				</ContentBlock>
