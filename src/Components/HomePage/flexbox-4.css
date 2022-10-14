@@ -1,0 +1,45 @@
+.flexbox-4 {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	width: 90vw;
+	height: 95vh;
+	margin: 5vh auto;
+}
+
+.flexbox-4-header {
+	font-size: min(6vmin, 3vmax);
+	line-height: min(6vmin, 3vmax);
+	margin: 2vh;
+}
+
+.flexbox-4 .grid-videos {
+	height: 70vh;
+	width: 70vw;
+	/* display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 3vw; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	/* gap: 3vw; */
+
+	margin: 0 auto;
+}
+
+.flexbox-4 .grid-videos iframe {
+	width: 30vmax;
+	height: 30vmin;
+}
+
+.flexbox-4 button {
+	font-size: min(2.5vmin, 1.75vmax);
+	line-height: min(2.5vmin, 1.75vmax);
+}

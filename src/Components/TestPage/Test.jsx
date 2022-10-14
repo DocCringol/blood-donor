@@ -10,6 +10,9 @@ const Test = () => {
 			<Transitions>
 				<ContentBlock style={{'background-color':'red'}} contentStyle={{'backgroundColor':'green'}}>
 					<div>height = {height}, width = {width}</div>
+					<iframe width="420" height="315"
+						src="https://www.youtube.com/embed/P0bCN9EDRkk">
+					</iframe>
 				</ContentBlock>
 			</Transitions>
 		</>

@@ -1,6 +1,4 @@
- /* TODO: Responsive navbar */
-
- .navbar {
+.navbar {
 	transition: 0.3s;
 	top: 5vh;
 
@@ -19,7 +17,7 @@
 
 	text-decoration: none;
 	color: transparent;
-	
+
 	transition: 0.3s;
 	border-radius: 0 6.5vh 6.5vh 0 / 0 6.5vh 6.5vh 0;
 	background-color: #DC3545;
@@ -31,8 +29,8 @@
 }
 
 .navbar a p {
-	transition: 0.3s;
-  font-size: min(7vmax, 4vmin);
+	transition: 0.1s;
+	font-size: min(7vmax, 4vmin);
 	position: relative;
 	top: 50%;
 	transform: translate(0, -50%);
@@ -48,10 +46,14 @@
 	top: 17.6vh;
 }
 
-#contact_us {
+#recomendations {
 	top: 32vh;
 }
 
-#test {
+#contact_us {
 	top: 46.4vh;
+}
+
+#test {
+	top: 60.8vh;
 }

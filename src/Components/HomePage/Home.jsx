@@ -52,6 +52,16 @@ const Home = () => {
 							<Image className='img-2' src='/Images/2.jpeg' alt='2' />
 							<Image className='img-3' src='/Images/3.png' alt='3' />
 						</div>
+						<div className={'flexbox-4 ' + orientation} id={'recomendations'}>
+							<div className='flexbox-4-header'>База рекомендаций кардиологов</div>
+							<div className='grid-videos'>
+								<div className='video-1'><iframe src="https://www.youtube.com/embed/P0bCN9EDRkk"></iframe></div>
+								<div className='video-2'><iframe src="https://www.youtube.com/embed/pEVNDnrXbjM"></iframe></div>
+								<div className='video-3'><iframe src="https://www.youtube.com/embed/_UphrrmOFGo"></iframe></div>
+								<div className='video-4'><iframe src="https://www.youtube.com/embed/JV5NhwBBwIk"></iframe></div>
+							</div>
+							<Button variant="danger">Больше видео</Button>
+						</div>
 						<div className={'flexbox-3 ' + orientation} id={'contact_us'}>
 								<div className='header'>
 									Есть вопросы или предложения? Хотите поучаствовать в программе? Напишите нам!
