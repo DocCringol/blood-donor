@@ -11,7 +11,7 @@
 }
 
 
-.logo {
+.alert.logo {
 	left: 77vw;
 	top: 5vh;
 	background: transparent;
@@ -21,14 +21,16 @@
 	padding: 0;
 }
 
-.logo img {
+.alert.logo img {
 	width: 18vw;
 }
 
 .only_pc {
+	position: fixed;
+	z-index: 99999;
 	height: 100vh;
-	width: 80vw;
-	margin: 0 auto;
+	width: 100vw;
+	padding: 0 10vh;
 	font-size: min(12vmin, 8vmax);
 	display: flex;
 	flex-wrap: wrap;
@@ -36,4 +38,13 @@
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
+	background-color: #fff8e1;
+}
+
+.only_pc.invis {
+	visibility: hidden;
+}
+
+.only_pc.vis {
+	visibility: visible;
 }

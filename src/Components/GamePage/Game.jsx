@@ -63,7 +63,7 @@ const Answer = ({ onClick, n }) => {
 						<InterDiv>
 							<Comment>Спасибо, что помог мне стать донором! Пусть в мире пульсирует жизнь</Comment>
 							<ButtonGrid bottom='15%'>
-								<Button variant="danger" className="startBtn" onClick={onClick}>Начать Занаво</Button>
+								<Button variant="danger" className="startBtn" onClick={onClick}>Начать Заново</Button>
 							</ButtonGrid>
 						</InterDiv>
 					</div>
@@ -194,20 +194,19 @@ const Game = () => {
 	let isPortrait = width > height ? false : true;
 	return (
 		<>
-			{isPortrait ?
-			<div className='only_pc'>
-				Пожалуйста, переверните своё устройство
-			</div>
-			:
-			<Frame>
-				<Alert variant="danger" className="logo">
-					<Image src="/Images/logo2.png"></Image>
-				</Alert>
-				<div className="game">
-					<Menu></Menu>
+			<div>
+				<div className={'only_pc ' + (isPortrait ? 'vis' : 'invis')}>
+					Пожалуйста, переверните своё устройство
 				</div>
-			</Frame>
-			}
+				<Frame>
+					<Alert variant="danger" className="logo">
+						<Image src="/Images/logo2.png"></Image>
+					</Alert>
+					<div className="game">
+						<Menu></Menu>
+					</div>
+				</Frame>
+			</div>
 		</>
 	)
 }

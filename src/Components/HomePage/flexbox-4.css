@@ -36,7 +36,7 @@
 
 .flexbox-4 .grid-videos iframe {
 	width: 30vmax;
-	height: 30vmin;
+	max-height: 30vmin;
 }
 
 .flexbox-4 button {

@@ -5,7 +5,6 @@ import './Footer.css';
 const Footer = () => {
 	return (
 		<>
-		{/* TODO Better links */}
 			<div className="footer">
 				<div className="presentation"><a href="./presentation.pdf" download={'presentation.pdf'}>Презентация проекта</a></div>
 				<div className="rezume">
