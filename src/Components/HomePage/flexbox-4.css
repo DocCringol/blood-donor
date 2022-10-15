@@ -6,7 +6,7 @@
 	text-align: center;
 
 	width: 90vw;
-	height: 95vh;
+	/* height: 95vh; */
 	margin: 5vh auto;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .flexbox-4 .grid-videos {
-	height: 70vh;
+	/* height: 70vh; */
 	width: 90vw;
 	/* display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -34,9 +34,14 @@
 	margin: 0 auto;
 }
 
-.flexbox-4 .grid-videos iframe {
+.flexbox-4.portrait .grid-videos iframe {
+	width: 50vmax;
+	/* height: 30vmin; */
+}
+
+.flexbox-4.portrait .grid-videos iframe {
 	width: 30vmax;
-	max-height: 30vmin;
+	/* height: 30vmin; */
 }
 
 .flexbox-4 button {
