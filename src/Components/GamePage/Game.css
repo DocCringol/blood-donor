@@ -17,7 +17,7 @@
 	background: transparent;
 	border: none;
 	position: fixed;
-	z-index: 9997;
+	z-index: 8997;
 	padding: 0;
 }
 
@@ -27,7 +27,7 @@
 
 .only_pc {
 	position: fixed;
-	z-index: 99999;
+	z-index: 8998;
 	height: 100vh;
 	width: 100vw;
 	padding: 0 10vh;
