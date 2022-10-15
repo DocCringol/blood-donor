@@ -1,0 +1,11 @@
+.kovalenok img {
+	object-fit: cover;
+	width: min(30vmin, 15vmax);
+}
+
+.kovalenok {
+	position: absolute;
+	z-index: 0;
+	bottom: 20vh;
+	left: 10vw;
+}

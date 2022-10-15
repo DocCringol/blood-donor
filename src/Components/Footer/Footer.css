@@ -10,11 +10,20 @@
 
 	padding: 1.5vh;
 
-	font-size: min(4vmax, 2vmin);
+	font-size: min(3.5vmax, 2vmin);
 }
 
 .footer > div {
-	width: 20vw;
+	width: 17vw;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer .contact {
+	width: 45vw;
 }
 
 .footer a {

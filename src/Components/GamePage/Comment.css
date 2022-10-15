@@ -1,0 +1,9 @@
+.ContentBlock_old .comment {
+	z-index: 9999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 60vw;
+    transform: translate(-50%, -50%);
+	font-size:min(4vmin, 1.5vmax);
+}

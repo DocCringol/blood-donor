@@ -1,0 +1,9 @@
+.buttonGrid {
+	display: grid;
+	grid-column-gap: 2vw;
+	position: absolute;
+	bottom: 7vh;
+	left: 50%;
+	width: 60vw;
+    transform: translate(-50%, 0);
+}

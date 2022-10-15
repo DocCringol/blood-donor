@@ -1,0 +1,39 @@
+.startBtn {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto 0;
+}
+
+.game .bg-image {
+	background-image: url(/Images/Game/bg.png);
+	filter: blur(5px);
+	background-position: left;
+}
+
+
+.logo {
+	left: 77vw;
+	top: 5vh;
+	background: transparent;
+	border: none;
+	position: fixed;
+	z-index: 9997;
+	padding: 0;
+}
+
+.logo img {
+	width: 18vw;
+}
+
+.only_pc {
+	height: 100vh;
+	width: 80vw;
+	margin: 0 auto;
+	font-size: min(12vmin, 8vmax);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}

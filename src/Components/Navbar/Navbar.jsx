@@ -5,6 +5,7 @@ import { useLocation, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion'
 import Home from '../HomePage/Home';
 import Test from '../TestPage/Test';
+import Game from '../GamePage/Game';
 import Footer from '../Footer/Footer';
 import './Navbar.css'
 import './NavbarMobile.css'
@@ -18,6 +19,7 @@ const AnimatedRouter = () => {
 							key={location.pathname}>
 							<Route path='/' element={<Home/>} />
 							<Route path='/test' element={<Test/>} />
+							<Route path='/game' element={<Game/>} />
 					</Routes>
 			</AnimatePresence>
 	)
@@ -57,6 +59,7 @@ class Navbar extends React.Component {
 						<Link to="/#centres" id="centres" onClick={this.onClick}><p>Донорские центры</p></Link>
 						<Link to="/#recomendations" id="recomendations" onClick={this.onClick}><p>Рекомендации</p></Link>
 						<Link to="/#contact_us" id="contact_us" onClick={this.onClick}><p>Напишите нам</p></Link>
+						<Link to="/game" id="game" onClick={this.onClick}><p>Игра</p></Link>
 						{/* <Link to="/test" id="test" onClick={this.onClick}><p>Тест</p></Link> */}
 					</nav>
 					<Footer></Footer>
