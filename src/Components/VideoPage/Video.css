@@ -1,0 +1,14 @@
+.soon_video {
+	z-index: 8998;
+	height: 100vh;
+	width: 70vw;
+	margin: 0 auto;
+	font-size: min(10vmin, 5vmax);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	background-color: #fff8e1;
+}

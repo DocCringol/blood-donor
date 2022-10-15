@@ -46,6 +46,16 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
+						<div className={'flexbox-6 ' + orientation}>
+							<div className='flexbox-6-header'>Новинка!</div>
+							<div className='flexbox-6-main'>
+								<div className='flexbox-6-koval'><Image src='/Images/Game/2.png'></Image></div>
+								<div className='flexbox-6-text'>
+									<p>Игра, которая поможет вам впервые сдать кровь</p>
+									<Button variant="danger" href='/game'>Играть</Button>
+								</div>
+							</div>
+						</div>
 						<div className={'flexbox-2 ' + orientation} id={'mem'}>
 							<div className='flexbox-2-header'>Памятки донора</div>
 							<Image className='img-1' src='/Images/1.jpg' alt='1' />
@@ -84,7 +94,7 @@ const Home = () => {
 								<div className='video-4'><iframe src="https://www.youtube.com/embed/JV5NhwBBwIk"></iframe></div>
 							</div>
 							{/* TODO More videos */}
-							<Button variant="danger">Больше видео</Button>
+							<Button variant="danger" href='/videos'>Больше видео</Button>
 						</div>
 						<div className={'flexbox-3 ' + orientation} id={'contact_us'}>
 								<div className='header'>

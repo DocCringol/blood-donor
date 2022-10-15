@@ -1,0 +1,58 @@
+.flexbox-6 {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	margin: 5vh auto;
+	height: 100vh;
+}
+
+.flexbox-6-main {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	margin: 5vh auto;
+	height: 70vh;
+}
+
+.flexbox-6-header {
+	margin: 5vh;
+	font-size: min(12vmin, 6vmax);
+	line-height: min(122vmin, 6vmax);
+}
+
+.flexbox-6-koval {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+
+	margin: 5vh auto;
+}
+
+.flexbox-6-koval img {
+	object-fit: cover;
+	width: min(40vmin, 20vmax);
+}
+
+.flexbox-6-text {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+	
+	font-size: min(9vmin, 4.5vmax);
+	line-height: min(9vmin, 4.5vmax);
+}
+
+.flexbox-6 a {
+	width: 40vw;
+	font-size: min(4vmin, 1.5vmax);
+}

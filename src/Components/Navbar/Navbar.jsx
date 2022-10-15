@@ -7,6 +7,7 @@ import Home from '../HomePage/Home';
 import Test from '../TestPage/Test';
 import Game from '../GamePage/Game';
 import Footer from '../Footer/Footer';
+import Video from '../VideoPage/Video';
 import './Navbar.css'
 import './NavbarMobile.css'
 
@@ -20,6 +21,7 @@ const AnimatedRouter = () => {
 							<Route path='/' element={<Home/>} />
 							<Route path='/test' element={<Test/>} />
 							<Route path='/game' element={<Game/>} />
+							<Route path='/videos' element={<Video/>} />
 					</Routes>
 			</AnimatePresence>
 	)
