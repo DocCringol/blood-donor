@@ -51,7 +51,7 @@ const Home = () => {
 							<div className='flexbox-6-main'>
 								<div className='flexbox-6-koval'><Image src='/Images/Game/2.png'></Image></div>
 								<div className='flexbox-6-text'>
-									<p>Игра, которая поможет вам впервые сдать кровь</p>
+									<p>Игра, которая поможет Вам стать донором</p>
 									<Button variant="danger" href='/game'>Играть</Button>
 								</div>
 							</div>
