@@ -1,6 +1,6 @@
 .flexbox-5 {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
 	justify-content: space-around;
 	align-content: space-around;
 	text-align: center;
