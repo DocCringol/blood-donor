@@ -6,7 +6,7 @@
 	text-align: center;
 
 	width: 90vw;
-	/* height: 95vh; */
+	min-height: 95vh;
 	margin: 5vh auto;
 }
 
