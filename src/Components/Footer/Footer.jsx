@@ -24,7 +24,7 @@ const Footer = () => {
 				</div>
 				<div className="developer">
 					<div className="developer-head">Разработчик сайта</div>
-					<a className="developer-tg" href={'https://t.me/elyd_t'}>Телеграм: @elyd_t</a>
+					<a className="developer-tg" href={'https://t.me/DocCringol'}>Телеграм: @DocCringol</a>
 				</div>
 			</div>
 		</>
