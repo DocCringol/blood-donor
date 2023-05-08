@@ -8,6 +8,7 @@ import Test from '../TestPage/Test';
 import Game from '../GamePage/Game';
 import Footer from '../Footer/Footer';
 import Video from '../VideoPage/Video';
+import Form from '../FormPage/Form';
 import './Navbar.css'
 import './NavbarMobile.css'
 
@@ -22,6 +23,7 @@ const AnimatedRouter = () => {
 							<Route path='/test' element={<Test/>} />
 							<Route path='/game' element={<Game/>} />
 							<Route path='/videos' element={<Video/>} />
+							<Route path='/form' element={<Form/>} />
 					</Routes>
 			</AnimatePresence>
 	)
@@ -60,7 +62,7 @@ class Navbar extends React.Component {
 						<Link to="/#mem" id="mem" onClick={this.onClick}><p>Памятки донора</p></Link>
 						<Link to="/#centres" id="centres" onClick={this.onClick}><p>Донорские центры</p></Link>
 						<Link to="/#recomendations" id="recomendations" onClick={this.onClick}><p>Рекомендации</p></Link>
-						<Link to="/#contact_us" id="contact_us" onClick={this.onClick}><p>Напишите нам</p></Link>
+						<Link to="/form" id="contact_us" onClick={this.onClick}><p>Анкета</p></Link>
 						<Link to="/game" id="game" onClick={this.onClick}><p>Игра</p></Link>
 						{/* <Link to="/test" id="test" onClick={this.onClick}><p>Тест</p></Link> */}
 					</nav>

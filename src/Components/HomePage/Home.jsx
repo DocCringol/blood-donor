@@ -47,6 +47,15 @@ const Home = () => {
 							</div>
 						</div>
 						<div className={'flexbox-6 ' + orientation}>
+							<div className='flexbox-6-header'>Если вы впервые на нашем ресурсе</div>
+							<div className='flexbox-6-main'>
+								<div className='flexbox-6-text'>
+									<p>Пройдите анкету на компетентность в сфере донорства крови</p>
+									<Button variant="danger" href='/form'>Пройти анкету</Button>
+								</div>
+							</div>
+						</div>
+						<div className={'flexbox-6 ' + orientation}>
 							<div className='flexbox-6-header'>Новинка!</div>
 							<div className='flexbox-6-main'>
 								<div className='flexbox-6-koval'><Image src='/Images/Game/2.png'></Image></div>
