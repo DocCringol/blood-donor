@@ -3,20 +3,6 @@ import React from 'react';
 import ContentBlock from '../ContentBlock/ContentBlock.jsx';
 import './Form.css';
 import Question from './Question.jsx';
-import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
-
-
-const GameQuestion = () => {
-	return (
-		<>
-			<p>
-				huy
-				{/*  */}
-			</p>
-		</>
-	)
-}
 
 const Form = () => {
 
