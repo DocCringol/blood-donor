@@ -94,7 +94,8 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className={'flexbox-4 ' + orientation} id={'recomendations'}>
+						{
+						/* <div className={'flexbox-4 ' + orientation} id={'recomendations'}>
 							<div className='flexbox-4-header'>База рекомендаций кардиологов</div>
 							<div className='grid-videos'>
 								<div className='video-1'><iframe src="https://www.youtube.com/embed/P0bCN9EDRkk"></iframe></div>
@@ -102,9 +103,9 @@ const Home = () => {
 								<div className='video-3'><iframe src="https://www.youtube.com/embed/_UphrrmOFGo"></iframe></div>
 								<div className='video-4'><iframe src="https://www.youtube.com/embed/JV5NhwBBwIk"></iframe></div>
 							</div>
-							{/* TODO More videos */}
 							<Button variant="danger" href='/videos'>Больше видео</Button>
-						</div>
+						</div> */
+						}
 						<div className={'flexbox-3 ' + orientation} id={'contact_us'}>
 								<div className='header'>
 									Есть вопросы или предложения? Хотите поучаствовать в программе? Напишите нам!
