@@ -62,7 +62,7 @@ class Navbar extends React.Component {
 						<Link to="/#mem" id="mem" onClick={this.onClick}><p>Памятки донора</p></Link>
 						<Link to="/#centres" id="centres" onClick={this.onClick}><p>Донорские центры</p></Link>
 						<Link to="/#contact_us" id="recomendations" onClick={this.onClick}><p>Напишите нам</p></Link>
-						<Link to="/form" id="contact_us" onClick={this.onClick}><p>Анкета</p></Link>
+						<Link to="/form" id="contact_us" onClick={this.onClick}><p>Тест</p></Link>
 						<Link to="/game" id="game" onClick={this.onClick}><p>Игра</p></Link>
 						{/* <Link to="/test" id="test" onClick={this.onClick}><p>Тест</p></Link> */}
 					</nav>

@@ -50,8 +50,8 @@ const Home = () => {
 							<div className='flexbox-6-header'>Если вы впервые на нашем ресурсе</div>
 							<div className='flexbox-6-main'>
 								<div className='flexbox-6-text'>
-									<p>Пройдите анкету на компетентность в сфере донорства крови</p>
-									<Button variant="danger" href='/form'>Пройти анкету</Button>
+									<p>Пройдите тест на компетентность в сфере донорства крови</p>
+									<Button variant="danger" href='/form'>Пройти тест</Button>
 								</div>
 							</div>
 						</div>
